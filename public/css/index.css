@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+   max-width: 575px;
+}
+
+.header {
+    background: url("../assets/images/bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    height: 80px;
+}
+.header .logo img{
+    height: 100%;
+}
+
+.main {
+    position: relative;
+}
+
+.main .language-container {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -5px;
+}
+
+.main .languages-wrapper {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #E8E9EB;
+    padding: 0 12px;
+    border: 1px solid #999;
+    border-radius: 0 0 8px 8px;
+}
+
+.main .languages-wrapper .language img {
+    width: 56px;
+}
