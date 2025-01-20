@@ -14,7 +14,10 @@ html {
 
 body {
     margin: 0 auto;
-   max-width: 575px;
+    max-width: 575px;
+    overflow-x: hidden;
+    font-family: "Inter", "Battambang", serif;
+    line-height: 1.5;
 }
 
 .header {
@@ -34,14 +37,15 @@ body {
 }
 
 .main {
-    position: relative;
+    width: 100%;
+    padding: 1.5rem;
 }
 
 .main .language-container {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: -5px;
+    top: 95px;
 }
 
 .main .languages-wrapper {
@@ -52,9 +56,91 @@ body {
     background-color: #E8E9EB;
     padding: 0 12px;
     border: 1px solid #999;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 12px 12px;
 }
 
-.main .languages-wrapper .language img {
-    width: 56px;
+.main .languages-wrapper .change-language {
+    cursor: pointer;
+    height: 64px;
+}
+
+.main .languages-wrapper .change-language img {
+    height: 100%;
+}
+
+.main .view-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.main .view-wrapper .view {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(77, 77, 234);
+    border-radius: 50%;
+}
+.main .view-wrapper .view img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.main .download-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.main .download-wrapper .download {
+    height: 100px;
+    flex: 1 1 50%;
+}
+
+.main .download-wrapper .download img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main .icon-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.main .icon-wrapper .icon {
+    height: 70px;
+}
+
+.main .icon-wrapper .icon img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .hotline,
+.footer .privacy {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .language-container {
+    margin: 1rem auto;
+}
+
+.footer .language-container .languages-wrapper .change-language {
+    border-right: 1px solid dodgerblue;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: dodgerblue;
+}
+.footer .language-container .languages-wrapper .change-language:last-child {
+    border: none;
 }

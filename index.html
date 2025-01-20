@@ -5,6 +5,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>IBC2888</title>
     <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/vendors/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header">
@@ -15,25 +16,87 @@
     <main class="main">
        <div class="language-container">
             <ul class="languages-wrapper">
-                <li class="language" id="en">
+                <li class="change-language" data-lang="en">
                     <img src="public/assets/icons/en.svg" alt="english">
                 </li>
-                <li class="language" id="kh">
+                <li class="change-language" data-lang="kh">
                     <img src="public/assets/icons/kh.svg" alt="khmer">
                 </li>
-                <li class="language" id="ch">
+                <li class="change-language" data-lang="th">
+                    <img src="public/assets/icons/th.svg" alt="thai">
+                </li>
+                <li class="change-language" data-lang="ch">
                     <img src="public/assets/icons/ch.svg" alt="china">
                 </li>
-                <li class="language" id="vn">
+                <li class="change-language" data-lang="vn">
                     <img src="public/assets/icons/vn.svg" alt="vietnam">
-                </li>
-                <li class="language" id="th">
-                    <img src="public/assets/icons/th.svg" alt="thai">
                 </li>
             </ul>
        </div>
+
+       <div class="view-wrapper">
+            <a href="desktop.html" class="view" id="desktop-view">
+                <img src="public/assets/icons/desktop.png" alt="desktop">
+            </a>
+            <a href="mobile.html" class="view" id="mobile-view">
+                <img src="public/assets/icons/mobile.png" alt="mobile">
+            </a>
+       </div>
+
+       <div class="download-wrapper">
+            <div class="download" id="playstore">
+                <img src="public/assets/icons/appstore.png" alt="Play Store">
+            </div>
+            <div class="download" id="appstore">
+                <img src="public/assets/icons/playstore.png" alt="App Store">
+            </div>
+       </div>
+
+       <div class="icon-wrapper">
+            <div class="icon" id="logo">
+                <img src="public/assets/icons/logo.png" alt="logo">
+            </div>
+            <div class="icon" id="dreamgaming">
+                <img src="public/assets/icons/dreamgaming.png" alt="dreamgaming">
+            </div>
+            <div class="icon" id="sexygaming">
+                <img src="public/assets/icons/sexygaming.png" alt="sexygaming">
+            </div>
+            <div class="icon" id="asiagaming">
+                <img src="public/assets/icons/asiagaming.png" alt="asiagaming">
+            </div>
+            <div class="icon" id="jokergaming">
+                <img src="public/assets/icons/jokergaming.png" alt="jokergaming">
+            </div>
+            <div class="icon" id="afbgaming">
+                <img src="public/assets/icons/afbgaming.png" alt="afbgaming">
+            </div>
+            <div class="icon" id="microgaming">
+                <img src="public/assets/icons/microgaming.png" alt="microgaming">
+            </div>
+            <div class="icon" id="askap">
+                <img src="public/assets/icons/askap.png" alt="askap">
+            </div>
+       </div>
     </main>
 
-    <script src="public/js/index.js"></script>
+    <footer class="footer">
+        <p class="hotline">Hotline: 096 789 789</p>
+        <p class="privacy" data-i18n="privacy">©ibc2888.com All right reserved.</p>
+        <table class="language-container">
+            <tr class="languages-wrapper">
+              <td class="change-language" data-lang="en">English</td>
+              <td class="change-language" data-lang="kh">ខ្មែរ</td>
+              <td class="change-language" data-lang="th">ไทย</td>
+              <td class="change-language" data-lang="ch">中文</td>
+              <td class="change-language" data-lang="vn">Tiếng Việt</td>
+            </tr>
+        </table>
+    </footer>
+
+    <script type="module" src="public/js/index.js"></script>
+    <script src="public/js/vendors/swiper-bundle.min.js"></script>
+    <script src="public/js/vendors/i18next.min.js"></script>
+    <script src="public/js/vendors/i18nextHttpBackend.min.js"></script>
 </body>
 </html>
