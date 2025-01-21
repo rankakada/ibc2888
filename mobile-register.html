@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBC2888</title>
+    <link rel="stylesheet" href="public/css/mobile.css">
+    <link rel="stylesheet" href="public/css/vendors/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="public/assets/icons/logo.png" alt="logo">
+        </div>
+    </header>
+    <main class="main">
+        <div class="swiper mobileBanner">
+            <div class="swiper-wrapper banner-wrapper"></div>
+        </div>
+        <form action="#" class="form form-register" method="post">
+            <div class="input-control">
+                <label for="username" data-i18n="username">ឈ្មោះ​គណនី</label>
+                <div class="icon">
+                    <img src="public/assets/icons/user.png" alt="password">
+                </div>
+                <input type="text" name="username" id="username" class="username" autocomplete="username" placeholder="ឈ្មោះគណនី" data-i18n-placeholder="usernamePlaceholder">
+                <span class="errorMsg" id="userErrorMsg" data-i18n-error=""></span>
+            </div>
+            <div class="input-control">
+                <label for="password" data-i18n="password">ពាក្យសម្ងាត់</label>
+                <div class="icon">
+                    <img src="public/assets/icons/lock.png" alt="password">
+                </div>
+                <input type="password" name="password" id="password" class="password" autocomplete="current-password" placeholder="ពាក្យសម្ងាត់" data-i18n-placeholder="passwordPlaceholder">
+                <span class="errorMsg" id="passErrorMsg" data-i18n-error=""></span>
+            </div>
+            <div class="input-control">
+                <label for="phoneNumber" data-i18n="phoneNumber">លេខទូរសព្ទ</label>
+                <div class="icon">
+                    <img src="public/assets/icons/phone.png" alt="phoneNumber">
+                </div>
+                <input type="tel" name="phoneNumber" id="phoneNumber" class="phoneNumber" placeholder="012-123-123">
+                <span class="errorMsg" id="phoneErrorMsg" data-i18n-error=""></span>
+            </div>
+            <div class="input-control">
+                <label for="currency" data-i18n="currency">រូបិយប័ណ្ណ</label>
+                <div class="icon">
+                    <img src="public/assets/icons/currency.png" alt="currency">
+                </div>
+                <select name="currency" id="currency" class="currency">
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label for="affiliate" data-i18n="affiliate">អ្នកណែនាំ</label>
+                <div class="icon">
+                    <img src="public/assets/icons/affiliate.png" alt="affiliate">
+                </div>
+                <input type="text" name="affiliate" id="affiliate" class="affiliate" placeholder="អ្នកណែនាំ" data-i18n-placeholder="affiliatePlaceholder">
+                <span class="errorMsg" id="affiliateErrorMsg" data-i18n-error=""></span>
+            </div>
+            <div class="input-control">
+                <label for="code" data-i18n="code">លេខកូដសុវត្ថិភាព</label>
+                <div class="icon">
+                    <img src="public/assets/icons/unlock.png" alt="phoneNumber">
+                </div>
+                <div class="code-control">
+                    <input type="number" name="code" id="code" class="code" placeholder="លេខកូដសុវត្ថិភាព" data-i18n-placeholder="codePlaceholder">
+                    <input type="number" class="code-random" readonly>
+                </div>
+                <span class="errorMsg" id="codeErrorMsg" data-i18n-error=""></span>
+            </div>
+            <span id="registerStatus"></span>
+            <button type="submit" class="btn btn-register" data-i18n="register">
+                ចូលលេង
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <table class="language-container">
+            <tr class="languages-wrapper">
+              <td class="change-language" data-lang="en">English</td>
+              <td class="change-language" data-lang="kh">ខ្មែរ</td>
+              <td class="change-language" data-lang="th">ไทย</td>
+              <td class="change-language" data-lang="ch">中文</td>
+              <td class="change-language" data-lang="vn">Tiếng Việt</td>
+            </tr>
+        </table>
+        <div class="footer-link">
+            <a href="desktop-register.html" class="web-version">Web Version</a>
+            <a href="mobile-login.html" class="btn-go-register">Login Account</a>
+        </div>
+    </footer>
+
+    <script type="module" src="public/js/register.js"></script>
+    <script src="public/js/vendors/jquery.min.js"></script>
+    <script src="public/js/vendors/swiper-bundle.min.js"></script>
+    <script src="public/js/vendors/i18next.min.js"></script>
+    <script src="public/js/vendors/i18nextHttpBackend.min.js"></script>
+</body>
+</html>

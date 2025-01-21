@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --font-family: "Inter", "Battambang", serif;
+    --color-white: rgb(255, 255, 255);
+    --color-gray: rgb(153, 153, 153);
+    --color-brightgray: rgb(232, 233, 235);
+    --color-blue: rgb(22, 73,203);
+    --coror-lightblue: rgb(87, 143, 218);
+    --color-darkblue: rgb(1, 21, 100);
+    --color-black: rgb(0, 0, 0);
+}
 
 *,
 *::before,
@@ -10,14 +20,17 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--color-brightgray);
 }
 
 body {
     margin: 0 auto;
-    max-width: 575px;
+    width: 575px;
     overflow-x: hidden;
-    font-family: "Inter", "Battambang", serif;
+    font-family: var(--font-family);
     line-height: 1.5;
+    height: 100vh;
+    background-color: var(--color-white);
 }
 
 .header {
@@ -53,9 +66,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background-color: #E8E9EB;
+    background-color: var(--color-brightgray);
     padding: 0 12px;
-    border: 1px solid #999;
+    border: 1px solid var(--color-gray);
     border-radius: 0 0 12px 12px;
 }
 
@@ -70,7 +83,7 @@ body {
 
 .main .view-wrapper {
     margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -79,7 +92,7 @@ body {
 .main .view-wrapper .view {
     height: 250px;
     width: 250px;
-    background-color: rgb(77, 77, 234);
+    background-color: var(--color-blue);
     border-radius: 50%;
 }
 .main .view-wrapper .view img{
@@ -109,7 +122,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 5rem;
 }
 
 .main .icon-wrapper .icon {
@@ -123,6 +137,7 @@ body {
 
 .footer {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .footer .hotline,
@@ -136,10 +151,10 @@ body {
 }
 
 .footer .language-container .languages-wrapper .change-language {
-    border-right: 1px solid dodgerblue;
+    border-right: 1px solid var(--coror-lightblue);
     padding: 0 1rem;
     cursor: pointer;
-    color: dodgerblue;
+    color: var(--coror-lightblue);
 }
 .footer .language-container .languages-wrapper .change-language:last-child {
     border: none;

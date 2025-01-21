@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Inter", "Battambang", serif;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.header {
+    background: url("../assets/images/bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0 2rem;
+}
+.header .logo {
+    height: 100px;
+}
+.header .logo img{
+    height: 100%;
+}
+
+.header .language-container {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+}
+
+.header .languages-wrapper {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #E8E9EB;
+    padding: 0 12px;
+    border: 1px solid #999;
+    border-radius: 0 0 12px 12px;
+}
+
+.header .languages-wrapper .change-language {
+    cursor: pointer;
+    height: 64px;
+}
+
+.header .languages-wrapper .change-language img {
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+}
+.main .desktopBanner {
+    width: 100%;
+}
+.main .desktopBanner img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.main .contents-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 8px;
+}
+
+.main .contents-wrapper .form .form-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: darkblue;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main .contents-wrapper .form .form-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+} 
+
+.main .contents-wrapper .form .form-content .input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .contents-wrapper .form .form-content .btn-login {
+    border: none;
+    outline: none;
+    background-color: darkblue;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.main .contents-wrapper .form .form-content .btn-login .icon {
+    height: 32px;
+}
+
+.main .contents-wrapper .form .form-content .btn-login .icon img{
+    height: 100%;
+}
+
+.main .contents-wrapper .ads-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.main .contents-wrapper .ads-wrapper img {
+    width: 100%;
+}

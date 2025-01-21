@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>IBC2888</title>
+    <link rel="stylesheet" href="public/css/dektop.css">
+    <link rel="stylesheet" href="public/css/vendors/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="public/assets/icons/logo.png" alt="logo">
+        </div>
+        <div class="language-container">
+            <ul class="languages-wrapper">
+                <li class="change-language" data-lang="en">
+                    <img src="public/assets/icons/en.svg" alt="english">
+                </li>
+                <li class="change-language" data-lang="kh">
+                    <img src="public/assets/icons/kh.svg" alt="khmer">
+                </li>
+                <li class="change-language" data-lang="th">
+                    <img src="public/assets/icons/th.svg" alt="thai">
+                </li>
+                <li class="change-language" data-lang="ch">
+                    <img src="public/assets/icons/ch.svg" alt="china">
+                </li>
+                <li class="change-language" data-lang="vn">
+                    <img src="public/assets/icons/vn.svg" alt="vietnam">
+                </li>
+            </ul>
+       </div>
+    </header>
+    <main class="main">
+        <div class="swiper desktopBanner">
+            <div class="swiper-wrapper banner-wrapper"></div>
+        </div>
+       <div class="contents-wrapper">
+            <form action="#" class="form form-register" method="post">
+                <div class="login-title">ចូលលេង</div>
+                <div class="input-control">
+                    <label for="username" data-i18n="username">ឈ្មោះ​គណនី</label>
+                    <input type="text" name="username" id="username" class="username" autocomplete="username" placeholder="ឈ្មោះគណនី" data-i18n-placeholder="usernamePlaceholder">
+                    <span class="errorMsg" id="userErrorMsg" data-i18n-error=""></span>
+                </div>
+                <div class="input-control password-input">
+                    <label for="password" data-i18n="password">ពាក្យសម្ងាត់</label>
+                    <input type="password" name="password" id="password" class="password" autocomplete="current-password" placeholder="ពាក្យសម្ងាត់" data-i18n-placeholder="passwordPlaceholder">
+                    <span class="errorMsg" id="passErrorMsg" data-i18n-error=""></span>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" data-i18n="rememberMe">ចងចាំ​ខ្ញុំ</label>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree" data-i18n="agree">យល់ព្រមលើកិច្ចព្រមព្រៀង</label>
+                </div>
+                <button type="submit" class="btn-login">
+                    <div class="icon">
+                        <img src="public/assets/icons/unlock.png" alt="submit">
+                    </div>
+                    <span  data-i18n="submit">ដាក់ស្នើ</span>
+                </button>
+            </form>
+            <div class="ads-wrapper">
+                <div class="ads">
+                    <img src="public/assets/images/ad1.png" alt="Ads">
+                </div>
+                <div class="ads">
+                    <img src="public/assets/images/ad2.png" alt="Ads">
+                </div>
+            </div>
+       </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="desktop-footer">
+            <li class="footer-list">
+                <a href="#">About CS288</a>
+            </li>
+            <li class="footer-list">
+                <a href="#">Terms of Use</a>
+            </li>
+            <li class="footer-list">
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+        <a href="desktop-login.html" class="btn-go-login">Login</a>
+        <div class="hotline">Hotline: 099 8789 789</div>
+    </footer>
+
+    <script type="module" src="public/js/login.js"></script>
+    <script src="public/js/vendors/jquery.min.js"></script>
+    <script src="public/js/vendors/swiper-bundle.min.js"></script>
+    <script src="public/js/vendors/i18next.min.js"></script>
+    <script src="public/js/vendors/i18nextHttpBackend.min.js"></script>
+</body>
+</html>
