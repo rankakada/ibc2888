@@ -162,3 +162,9 @@ body {
 .footer .language-container .languages-wrapper .change-language:last-child {
     border: none;
 }
+
+@media screen and (max-witdh: 575px) {
+    body {
+        width: 100%;
+    }
+}

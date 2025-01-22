@@ -195,3 +195,9 @@ body {
     text-decoration: none;
     color: var(--color-lightblue);
 }
+
+@media screen and (max-witdh: 575px) {
+    body {
+        width: 100%;
+    }
+}
