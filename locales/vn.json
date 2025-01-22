@@ -1,5 +1,6 @@
 {
     "privacy": "©ibc2888.com Bảo lưu mọi quyền.",
+    "account": "Tài khoản",
     "username": "Tên người dùng",
     "password": "Mật khẩu",
     "phoneNumber": "Số điện thoại",
@@ -29,5 +30,6 @@
     "codeEmpty": "Vui lòng nhập mã bảo mật",
     "codeInvalid": "Mã bảo mật không hợp lệ",
     "incorrectUsername": "Tên người dùng không đúng!",
-    "incorrectPassword": "Mật khẩu không đúng!"
+    "incorrectPassword": "Mật khẩu không đúng!",
+    "registerStatus": "Tạo tài khoản thành công!"
 }

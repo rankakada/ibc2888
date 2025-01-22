@@ -2,12 +2,15 @@
 :root {
     --font-family: "Inter", "Battambang", serif;
     --color-white: rgb(255, 255, 255);
+    --color-light: rgb(239, 255, 255);
+    --color-lightgray: rgb(235, 235, 235);
     --color-gray: rgb(153, 153, 153);
     --color-brightgray: rgb(232, 233, 235);
     --color-blue: rgb(22, 73,203);
-    --coror-lightblue: rgb(87, 143, 218);
+    --color-lightblue: rgb(87, 143, 218);
     --color-darkblue: rgb(1, 21, 100);
     --color-black: rgb(0, 0, 0);
+    --color-red: rgb(255, 0, 0);
 }
 
 *,
@@ -151,10 +154,10 @@ body {
 }
 
 .footer .language-container .languages-wrapper .change-language {
-    border-right: 1px solid var(--coror-lightblue);
+    border-right: 1px solid var(--color-lightblue);
     padding: 0 1rem;
     cursor: pointer;
-    color: var(--coror-lightblue);
+    color: var(--color-lightblue);
 }
 .footer .language-container .languages-wrapper .change-language:last-child {
     border: none;

@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --font-family: "Inter", "Battambang", serif;
+    --color-white: rgb(255, 255, 255);
+    --color-light: rgb(239, 255, 255);
+    --color-lightgray: rgb(235, 235, 235);
+    --color-gray: rgb(153, 153, 153);
+    --color-brightgray: rgb(232, 233, 235);
+    --color-blue: rgb(22, 73,203);
+    --color-lightblue: rgb(87, 143, 218);
+    --color-darkblue: rgb(1, 21, 100);
+    --color-black: rgb(0, 0, 0);
+    --color-red: rgb(255, 0, 0);
+}
+
 
 *,
 *::before,
@@ -10,15 +24,15 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--color-lightgray);
 }
 
 body {
     margin: 0 auto;
-    width: 100%;
+    width: 1200px;
     overflow-x: hidden;
-    font-family: "Inter", "Battambang", serif;
+    font-family: var(--font-family);
     line-height: 1.5;
-    background-color: white;
 }
 
 .header {
@@ -50,9 +64,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background-color: #E8E9EB;
+    background-color: var(--color-light);
     padding: 0 12px;
-    border: 1px solid #999;
+    border: 1px solid var(--color-gray);
     border-radius: 0 0 12px 12px;
 }
 
@@ -67,62 +81,196 @@ body {
 
 .main {
     width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0 1rem;
 }
-.main .desktopBanner {
+
+.main .main-content {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main .main-content .desktopBanner {
     width: 100%;
 }
-.main .desktopBanner img{
+.main .main-content .desktopBanner img{
     width: 100%;
     object-fit: contain;
 }
 
-.main .contents-wrapper {
+.main .main-content .contents-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 0 8px;
+    gap: 1rem;
 }
 
-.main .contents-wrapper .form .form-title {
-    font-size: 32px;
+.main .main-content .contents-wrapper .form {
+    width: 100%;
+}
+
+.main .main-content .contents-wrapper .form .form-title {
+    font-size: 28px;
     font-weight: 700;
-    color: darkblue;
-    margin-left: 2rem;
+    color: var(--color-darkblue);
     margin-bottom: 1rem;
 }
 
-.main .contents-wrapper .form .form-content {
+.main .main-content .contents-wrapper .form .form-content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: auto 70px;
+    align-items: center;
+    gap: 1rem;
 } 
 
-.main .contents-wrapper .form .form-content .input-wrapper {
+.main .main-content .contents-wrapper .form .form-content .input-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
-.main .contents-wrapper .form .form-content .btn-login {
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control {
+    display: grid;
+    grid-template-columns: 90px auto;
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-darkblue);
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control label::after {
+    content: ':';
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .right-wrapper input,
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .right-wrapper select{
+    width: 100%;
+    padding: 0.3rem;
+    border: 1.5px solid var(--color-gray);
+    background-color: var(--color-lightgray);
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-darkblue);
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .right-wrapper input:focus {
+    border: 1.5px solid var(--color-blue);
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .right-wrapper .errorMsg {
+    color: var(--color-red);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .code-control {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control .code-control .code {
+    width: 60%;
+}
+.main .main-content .contents-wrapper .form .form-content .input-wrapper  .input-control .code-control .code-random {
+    width: 40%;
+}
+
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control input::-webkit-outer-spin-button,
+.main .main-content .contents-wrapper .form .form-content .input-wrapper .input-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.main .main-content .contents-wrapper .form .form-content .btn {
     border: none;
     outline: none;
-    background-color: darkblue;
-    color: white;
-    width: 100px;
-    height: 100px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
 }
 
-.main .contents-wrapper .form .form-content .btn-login .icon {
-    height: 32px;
+.main .main-content .contents-wrapper .form .form-content .btn span {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.main .contents-wrapper .form .form-content .btn-login .icon img{
+.main .main-content .contents-wrapper .form .form-content .btn .icon {
+    height: 28px;
+}
+
+.main .main-content .contents-wrapper .form .form-content .btn .icon img{
     height: 100%;
 }
 
-.main .contents-wrapper .ads-wrapper {
+.main .main-content .contents-wrapper .ads-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+    width: 100%;
+    margin-top: 1rem;
 }
 
-.main .contents-wrapper .ads-wrapper img {
+.main .main-content .contents-wrapper .ads-wrapper .ads {
     width: 100%;
+    height: 150px;
+}
+
+.main .main-content .contents-wrapper .ads-wrapper .ads img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.main .main-content .contents-wrapper .checkbox-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-darkblue);
+}
+
+.main .footer .hotline {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-darkblue);
+}
+
+.main .footer .btn-go-register,
+.main .footer .btn-go-login {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer .desktop-footer {
+    margin: 1rem auto;
+}
+
+.footer .desktop-footer .footer-list td {
+    border-right: 1px solid var(--color-darkblue);
+    padding: 0 1rem;
+    cursor: pointer;
+    color: var(--coror-lightblue);
+}
+.footer .desktop-footer .footer-list td:last-child {
+    border: none;
+}
+
+.main .footer .desktop-footer .footer-list a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-darkblue);
 }

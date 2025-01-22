@@ -1,5 +1,6 @@
 {
     "privacy": "©ibc2888.com สงวนลิขสิทธิ์ทั้งหมด",
+    "account": "บัญชี",
     "username": "ชื่อผู้ใช้",
     "password": "รหัสผ่าน",
     "phoneNumber": "หมายเลขโทรศัพท์",
@@ -29,5 +30,6 @@
     "codeEmpty": "กรุณากรอกรหัสความปลอดภัย",
     "codeInvalid": "รหัสความปลอดภัยไม่ถูกต้อง",
     "incorrectUsername": "ชื่อผู้ใช้ไม่ถูกต้อง!",
-    "incorrectPassword": "รหัสผ่านไม่ถูกต้อง!"
+    "incorrectPassword": "รหัสผ่านไม่ถูกต้อง!",
+    "registerStatus": "การสร้างบัญชีสำเร็จ!"
 }

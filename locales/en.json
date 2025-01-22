@@ -1,5 +1,6 @@
 {
     "privacy": "©ibc2888.com All rights reserved.",
+    "account": "Account",
     "username": "Username",
     "password": "Password",
     "phoneNumber": "Phone number",
@@ -29,6 +30,7 @@
     "codeEmpty": "Please enter the security code",
     "codeInvalid": "Invalid security code",
     "incorrectUsername": "Incorrect username!",
-    "incorrectPassword": "Incorrect password!"
+    "incorrectPassword": "Incorrect password!",
+    "registerStatus": "Account creation was successful!"
 }
   

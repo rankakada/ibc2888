@@ -1,5 +1,6 @@
 {
     "privacy": "©ibc2888.com 版权所有。",
+    "account": "帳戶",
     "username": "用户名",
     "password": "密码",
     "phoneNumber": "电话号码",
@@ -29,5 +30,6 @@
     "codeEmpty": "请输入验证码",
     "codeInvalid": "验证码无效",
     "incorrectUsername": "用户名不正确！",
-    "incorrectPassword": "密码不正确！"
+    "incorrectPassword": "密码不正确！",
+    "registerStatus": "账户创建成功！"
 }

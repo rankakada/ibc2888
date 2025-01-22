@@ -33,65 +33,112 @@
        </div>
     </header>
     <main class="main">
-        <div class="swiper desktopBanner">
-            <div class="swiper-wrapper banner-wrapper"></div>
-        </div>
-       <div class="contents-wrapper">
-            <form action="#" class="form form-register" method="post">
-                <div class="login-title">ចូលលេង</div>
-                <div class="input-control">
-                    <label for="username" data-i18n="username">ឈ្មោះ​គណនី</label>
-                    <input type="text" name="username" id="username" class="username" autocomplete="username" placeholder="ឈ្មោះគណនី" data-i18n-placeholder="usernamePlaceholder">
-                    <span class="errorMsg" id="userErrorMsg" data-i18n-error=""></span>
-                </div>
-                <div class="input-control password-input">
-                    <label for="password" data-i18n="password">ពាក្យសម្ងាត់</label>
-                    <input type="password" name="password" id="password" class="password" autocomplete="current-password" placeholder="ពាក្យសម្ងាត់" data-i18n-placeholder="passwordPlaceholder">
-                    <span class="errorMsg" id="passErrorMsg" data-i18n-error=""></span>
-                </div>
-                <div class="check-box">
-                    <input type="checkbox" name="remember" id="remember">
-                    <label for="remember" data-i18n="rememberMe">ចងចាំ​ខ្ញុំ</label>
-                </div>
-                <div class="check-box">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label for="agree" data-i18n="agree">យល់ព្រមលើកិច្ចព្រមព្រៀង</label>
-                </div>
-                <button type="submit" class="btn-login">
-                    <div class="icon">
-                        <img src="public/assets/icons/unlock.png" alt="submit">
-                    </div>
-                    <span  data-i18n="submit">ដាក់ស្នើ</span>
-                </button>
-            </form>
-            <div class="ads-wrapper">
-                <div class="ads">
-                    <img src="public/assets/images/ad1.png" alt="Ads">
-                </div>
-                <div class="ads">
-                    <img src="public/assets/images/ad2.png" alt="Ads">
-                </div>
+        <div class="main-content">
+            <div class="swiper desktopBanner">
+                <div class="swiper-wrapper banner-wrapper"></div>
             </div>
-       </div>
+           <div class="contents-wrapper">
+                <form action="#" class="form form-register" method="post">
+                    <div class="form-title" data-i18n="register">ចុះឈ្មោះ</div>
+                    <div class="form-content">
+                        <div class="input-wrapper">
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="username" data-i18n="account">​គណនី</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <input type="text" name="username" id="username" class="username" autocomplete="username">
+                                    <p class="errorMsg" id="userErrorMsg" data-i18n-error=""></p>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="password" data-i18n="password">ពាក្យសម្ងាត់</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <input type="password" name="password" id="password" class="password" autocomplete="current-password">
+                                    <p class="errorMsg" id="passErrorMsg" data-i18n-error=""></p>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="phoneNumber" data-i18n="phoneNumber">លេខទូរសព្ទ</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" class="phoneNumber">
+                                    <p class="errorMsg" id="phoneErrorMsg" data-i18n-error=""></p>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="currency" data-i18n="currency">រូបិយប័ណ្ណ</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <select name="currency" id="currency" class="currency">
+                                        <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="affiliate" data-i18n="affiliate">អ្នកណែនាំ</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <input type="text" name="affiliate" id="affiliate" class="affiliate">
+                                    <p class="errorMsg" id="affiliateErrorMsg" data-i18n-error=""></p>
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <div class="left-wrapper">
+                                    <label for="code" data-i18n="code">លេខកូដសុវត្ថិភាព</label>
+                                </div>
+                                <div class="right-wrapper">
+                                    <div class="code-control">
+                                        <input type="number" name="code" id="code" class="code">
+                                        <input type="number" class="code-random" readonly>
+                                    </div>
+                                    <p class="errorMsg" id="codeErrorMsg" data-i18n-error=""></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-register">
+                            <div class="icon">
+                                <img src="public/assets/icons/unlock.png" alt="submit">
+                            </div>
+                            <span data-i18n="submit">ដាក់ស្នើ</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="ads-wrapper">
+                    <div class="ads">
+                        <img src="public/assets/images/ad1.png" alt="Ads">
+                    </div>
+                    <div class="ads">
+                        <img src="public/assets/images/ad2.png" alt="Ads">
+                    </div>
+                </div>
+           </div>
+           <footer class="footer">
+                <table class="desktop-footer">
+                    <tr class="footer-list">
+                        <td data-lang="">
+                            <a href="#">About CS288</a>
+                        </td>
+                        <td data-lang="">
+                            <a href="#">Terms of Use</a>
+                        </td>
+                        <td data-lang="">
+                            <a href="#">Contact Us</a>
+                        </td>
+                    </tr>
+                </table>
+                <a href="desktop-login.html" class="btn-go-login">Login Account</a>
+                <div class="hotline">Hotline: 099 8789 789</div>
+            </footer>
+        </div>
     </main>
 
-    <footer class="footer">
-        <ul class="desktop-footer">
-            <li class="footer-list">
-                <a href="#">About CS288</a>
-            </li>
-            <li class="footer-list">
-                <a href="#">Terms of Use</a>
-            </li>
-            <li class="footer-list">
-                <a href="#">Contact Us</a>
-            </li>
-        </ul>
-        <a href="desktop-login.html" class="btn-go-login">Login</a>
-        <div class="hotline">Hotline: 099 8789 789</div>
-    </footer>
-
-    <script type="module" src="public/js/login.js"></script>
+    <script type="module" src="public/js/register.js"></script>
     <script src="public/js/vendors/jquery.min.js"></script>
     <script src="public/js/vendors/swiper-bundle.min.js"></script>
     <script src="public/js/vendors/i18next.min.js"></script>
