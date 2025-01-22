@@ -28,11 +28,11 @@ html {
 
 body {
     margin: 0 auto;
-    width: 575px;
+    max-width: 575px;
     overflow-x: hidden;
     font-family: var(--font-family);
     line-height: 1.5;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-white);
 }
 
@@ -88,13 +88,12 @@ body {
     margin-top: 5rem;
     margin-bottom: 3rem;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     cursor: pointer;
 }
 
 .main .view-wrapper .view {
-    height: 250px;
-    width: 250px;
     background-color: var(--color-blue);
     border-radius: 50%;
 }
@@ -126,7 +125,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .main .icon-wrapper .icon {
@@ -163,8 +162,25 @@ body {
     border: none;
 }
 
-@media screen and (max-witdh: 575px) {
+@media screen and (max-width: 575px) {
     body {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .main .languages-wrapper .change-language {
+        height: 36px;
+    }
+    .main .view-wrapper {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .main .icon-wrapper {
+        margin-top: 1rem;
+
+    }
+    .main .icon-wrapper .icon {
+        height: 40px;
     }
 }

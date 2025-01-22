@@ -36,6 +36,8 @@ body {
     background-color: var(--color-white);
 }
 
+
+
 .header {
     background: url("../assets/images/bg.jpg") no-repeat center;
     background-size: cover;
@@ -196,7 +198,7 @@ body {
     color: var(--color-lightblue);
 }
 
-@media screen and (max-witdh: 575px) {
+@media screen and (max-width: 575px) {
     body {
         width: 100%;
     }
