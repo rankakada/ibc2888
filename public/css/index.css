@@ -64,7 +64,7 @@ body {
     top: 95px;
 }
 
-.main .languages-wrapper {
+.main .language-container .languages-wrapper {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -75,12 +75,12 @@ body {
     border-radius: 0 0 12px 12px;
 }
 
-.main .languages-wrapper .change-language {
+.main .language-container .languages-wrapper .change-language {
     cursor: pointer;
     height: 64px;
 }
 
-.main .languages-wrapper .change-language img {
+.main .language-container .languages-wrapper .change-language img {
     height: 100%;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 @media screen and (max-width: 424px) {
-    .main .languages-wrapper .change-language {
+    .main table tbody .languages-wrapper .changeLanguage {
         height: 36px;
     }
     .main .view-wrapper {
