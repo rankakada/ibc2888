@@ -6,7 +6,6 @@ $(document).ready(function () {
     slider();
 
     const $registerForm = $(".form-register");
-    const $togglePassword = $(".eye");
     const $username = $(".username");
     const $password = $(".password");
     const $phoneNumber = $(".phoneNumber");
@@ -14,13 +13,6 @@ $(document).ready(function () {
     const $code = $(".code");
     const $randomCode = $(".code-random");
     const $registerStatus = $("#registerStatus");
-
-    // Toggle password visibility
-    $togglePassword.on("click", function () {
-        const type = $password.attr("type") === "password" ? "text" : "password";
-        $password.attr("type", type);
-        $(this).toggleClass("fa-eye-slash fa-eye");
-    });
 
     // Generate a random 5-digit code
     const generateRandomCode = () => Math.floor(10000 + Math.random() * 90000);

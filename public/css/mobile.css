@@ -86,7 +86,7 @@ body {
 }
 
 .main .form .input-control input,
-.input-control select {
+.main .form .input-control select {
     padding: 12px 0;
     padding-left: 3.5rem;
     border-radius: 50px;
